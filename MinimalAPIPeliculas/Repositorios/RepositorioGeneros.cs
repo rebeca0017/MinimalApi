@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Microsoft.Data.SqlClient;
 using MinimalAPIPeliculas.Entidades;
+using System.Data;
 using System.Data.Common;
 
 namespace MinimalAPIPeliculas.Repositorios
@@ -19,10 +20,8 @@ namespace MinimalAPIPeliculas.Repositorios
         {
             using (var conexion = new SqlConnection(connectionString))
             {
-                var generos = await conexion.QueryAsync<Genero>(@"
-                                                                SELECT Id, Nombre
-                                                                FROM Generos 
-                                                                ORDER BY  Nombre");
+                var generos = await conexion.QueryAsync<Genero>("Generos_ObtenerTodos", 
+                    commandType: CommandType.StoredProcedure);
 
                 return generos.ToList();
             }
@@ -32,7 +31,8 @@ namespace MinimalAPIPeliculas.Repositorios
         {
             using (var conexion = new SqlConnection(connectionString))
             {
-                var genero = await conexion.QueryFirstOrDefaultAsync<Genero>(@"Select Id, Nombre from Generos WHERE Id=@Id", new {id});
+                var genero = await conexion.QueryFirstOrDefaultAsync<Genero>("Generos_ObtenerPorId", new {id}, 
+                    commandType: CommandType.StoredProcedure);
 
                 return genero;
             }
@@ -42,10 +42,9 @@ namespace MinimalAPIPeliculas.Repositorios
         {
             using (var conexion = new SqlConnection(connectionString))
             {
-                var id = await conexion.QuerySingleAsync<int>(@"
-                    INSERT INTO Generos (Nombre) 
-                    VALUES (@Nombre);
-                    SELECT SCOPE_IDENTITY();", genero);
+                var id = await conexion.QuerySingleAsync<int>("Generos_Crear", 
+                    new { genero.Nombre },
+                    commandType: CommandType.StoredProcedure);
 
                 genero.Id = id;
                 return id;
@@ -57,12 +56,8 @@ namespace MinimalAPIPeliculas.Repositorios
         {
             using(var conexion =new SqlConnection(connectionString))
             {
-                var existe = await conexion.QuerySingleAsync<bool>(@"
-                                                IF EXISTS (SELECT 1 FROM Generos WHERE Id = @Id)
-                                                    SELECT 1
-                                                ELSE
-                                                    SELECT 0 
-                                                ", new {id});
+                var existe = await conexion.QuerySingleAsync<bool>("Genero_Existe", new {id},
+                    commandType: CommandType.StoredProcedure);
                 return existe; 
             }
         }
@@ -71,9 +66,8 @@ namespace MinimalAPIPeliculas.Repositorios
         {
             using (var conexion = new SqlConnection(connectionString))
             {
-                await conexion.ExecuteAsync(@"UPDATE Generos
-                                                                SET Nombre = @Nombre
-                                                                WHERE Id = @Id", genero);
+                await conexion.ExecuteAsync("Genero_Actualizar", genero,
+                    commandType: CommandType.StoredProcedure);
             }
             }
 
@@ -81,7 +75,8 @@ namespace MinimalAPIPeliculas.Repositorios
         {
             using (var conexion = new SqlConnection(connectionString))
             {
-                await conexion.ExecuteAsync(@"DELETE Generos WHERE Id= @id", new {id});
+                await conexion.ExecuteAsync("Generos_Borrar", new {id}, 
+                    commandType: CommandType.StoredProcedure);
             }
         }
     }
