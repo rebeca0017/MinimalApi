@@ -26,7 +26,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IRepositorioGeneros, RepositorioGeneros>();
 
-
+builder.Services.AddAutoMapper(typeof(Program));
 
 
 var app = builder.Build();
@@ -38,56 +38,7 @@ app.UseSwaggerUI();
 app.UseCors();
 app.UseOutputCache();
 
-var endpointsGeneros = app.MapGroup("/generos");
-endpointsGeneros.MapGet("/", async (IRepositorioGeneros repositorio) =>
-{
-    return await repositorio.ObtenerTodos();
-});
+app.MapGroup("/generos");
 
-endpointsGeneros.MapGet("/{id:int}", async (int id, IRepositorioGeneros repositorio) =>
-{
-    var genero = await repositorio.ObtenerPorId(id);
-
-    if(genero is null)
-    {
-        return Results.NotFound();
-    }
-    return Results.Ok(genero);
-});
-
-endpointsGeneros.MapPost("/", async (Genero genero,
-        IRepositorioGeneros repositorioGeneros) =>
-{
-    var id = await repositorioGeneros.Crear(genero);
-    return TypedResults.Created($"/generos/{id}", genero);
-});
-
-
-endpointsGeneros.MapPut("/{id:int}", async (int id, Genero genero, IRepositorioGeneros repositorio,
-    IOutputCacheStore outputCacheStore) =>
-{
-    var existe = await repositorio.Existe(id);
-    if (!existe)
-    {
-        return Results.NotFound();
-    }
-    await repositorio.Actualizar(genero);
-    await outputCacheStore.EvictByTagAsync("generos-get", default);
-    return Results.NoContent();
-});
-
-
-endpointsGeneros.MapDelete("/{id:int}", async (int id, IRepositorioGeneros repositorio,
-    IOutputCacheStore outputCacheStore) =>
-{
-    var existe = await repositorio.Existe(id);
-    if (!existe)
-    {
-        return Results.NotFound();
-    }
-    await repositorio.Borrar(id);
-    await outputCacheStore.EvictByTagAsync("generos-get", default);
-    return Results.NoContent();
-});
 
 app.Run();
