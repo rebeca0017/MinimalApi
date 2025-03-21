@@ -30,6 +30,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IRepositorioGeneros, RepositorioGeneros>();
 builder.Services.AddScoped<IRepositorioActores, RepositorioActores>();
 builder.Services.AddScoped<IRepositorioPeliculas, RepositorioPeliculas>();
+builder.Services.AddScoped<IRepositorioComentarios, RepositorioComentarios>();
 
 builder.Services.AddScoped<IAlmacenadorArchivos, AlmacenadorArchivosLocal>();
 builder.Services.AddHttpContextAccessor();
@@ -49,6 +50,7 @@ app.UseOutputCache();
 
 app.MapGroup("/generos").MapGeneros();
 app.MapGroup("/actores").MapActores();
-
+app.MapGroup("/peliculas").MapPeliculas();
+app.MapGroup("/pelicula/{peliculaId: int}/comentarios").MapComentarios();
 
 app.Run();
