@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.OutputCaching;
 using MinimalAPIPeliculas.DTOs;
 using MinimalAPIPeliculas.Entidades;
+using MinimalAPIPeliculas.Filtros;
 using MinimalAPIPeliculas.Repositorios;
 
 namespace MinimalAPIPeliculas.Endpoints
@@ -16,9 +17,9 @@ namespace MinimalAPIPeliculas.Endpoints
                 c.Expire(TimeSpan.FromSeconds(60))
                 .Tag("comentarios-get"));
             group.MapGet("/{id:int}", ObtenerPorId).WithName("ObtenerComentarioPorId");
-            group.MapPost("/", Crear);
+            group.MapPost("/", Crear).AddEndpointFilter<FiltroValidaciones<CrearComentarioDTO>>();
 
-            group.MapPut("/{id:int}", Actualizar);
+            group.MapPut("/{id:int}", Actualizar).AddEndpointFilter<FiltroValidaciones<CrearComentarioDTO>>();
             group.MapDelete("/{id:int}", Borrar);
 
             return group;

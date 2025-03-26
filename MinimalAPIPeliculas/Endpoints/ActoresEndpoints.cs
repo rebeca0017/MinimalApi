@@ -1,11 +1,14 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OutputCaching;
 using MinimalAPIPeliculas.DTOs;
 using MinimalAPIPeliculas.Entidades;
+using MinimalAPIPeliculas.Filtros;
 using MinimalAPIPeliculas.Repositorios;
 using MinimalAPIPeliculas.Servicios;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace MinimalAPIPeliculas.Endpoint
@@ -16,11 +19,11 @@ namespace MinimalAPIPeliculas.Endpoint
 
         public static RouteGroupBuilder MapActores(this RouteGroupBuilder group)
         {
-            group.MapPost("/", Crear).DisableAntiforgery();
+            group.MapPost("/", Crear).DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearActorDTO>>();
             group.MapGet("/", ObtenerActores).CacheOutput(c => c.Expire(TimeSpan.FromSeconds(60)).Tag("actores-get"));
             group.MapGet("/{id:int}", ObtenerActorPorId);
             group.MapGet("obtenerPorNombre/{nombre}", ObtenerPorNombre);
-            group.MapPut("/{id:int}", Actualizar).DisableAntiforgery();
+            group.MapPut("/{id:int}", Actualizar).DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearActorDTO>>();
             group.MapDelete("/{id:int}", Borrar);
             return group;
         }
@@ -57,10 +60,13 @@ namespace MinimalAPIPeliculas.Endpoint
             return TypedResults.Ok(actoresDTO);
         }
 
-        static async Task<Created<ActorDTO>> Crear([FromForm] CrearActorDTO crearActorDTO,
+        static async Task<Results<Created<ActorDTO>, ValidationProblem>> 
+            Crear([FromForm] CrearActorDTO crearActorDTO,
             IRepositorioActores repositorio, IOutputCacheStore outputCacheStore,
             IMapper mapper, IAlmacenadorArchivos almacenadorArchivos)
         {
+            
+
             var actor = mapper.Map<Actor>(crearActorDTO);
 
             if (crearActorDTO.Foto is not null)

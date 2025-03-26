@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "bkl9D6w3HCl+ras++CacgRQ7HrkEjexT1AYccU7n5/A=",
+  "Source": "MinimalAPIPeliculas",
+  "BasePath": "_content/MinimalAPIPeliculas",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MinimalAPIPeliculas\\wwwroot",
+      "Source": "MinimalAPIPeliculas",
+      "ContentRoot": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/MinimalAPIPeliculas",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

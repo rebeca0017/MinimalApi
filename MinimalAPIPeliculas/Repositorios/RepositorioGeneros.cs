@@ -62,6 +62,18 @@ namespace MinimalAPIPeliculas.Repositorios
             }
         }
 
+        public async Task<bool>Existe (int id, string nombre)
+        {
+            using (var conexion = new SqlConnection(connectionString))
+            {
+                var existe = await conexion
+                    .QuerySingleAsync<bool>("Generos_ExistePorIdYNombre",
+                     new { id, nombre },
+                     commandType: CommandType.StoredProcedure);
+                return existe; 
+            }
+        }
+
         public async Task<List<int>> Existen(List<int> ids)
         {
             var dt = new DataTable();
