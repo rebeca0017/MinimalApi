@@ -1,0 +1,6 @@
+wwwroot\peliculas\0ead02a9-fe5b-42a0-8080-dbd613810b68.jpg
+wwwroot\peliculas\46cd9f28-9030-484a-bea8-895b1437fe77.jpg
+wwwroot\peliculas\6b848e0d-b62d-427f-bb84-f26a392aaf92.jpg
+wwwroot\peliculas\767eb31d-9bfd-43ac-bb2f-412706cb1ed6.jpg
+wwwroot\peliculas\d88d6efd-9afb-4228-abb9-a65b56fb3cc8.jpg
+wwwroot\peliculas\da5341a9-b37a-4add-bb3d-5a051111f14d.jpg

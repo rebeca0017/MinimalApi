@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bkl9D6w3HCl+ras++CacgRQ7HrkEjexT1AYccU7n5/A=",
+  "Hash": "vEVd0hUVWO4be6xXjcZPzWtsZhabb/GHv5w85GSt4vo=",
   "Source": "MinimalAPIPeliculas",
   "BasePath": "_content/MinimalAPIPeliculas",
   "Mode": "Default",
@@ -15,6 +15,626 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\0ead02a9-fe5b-42a0-8080-dbd613810b68.jpg",
+      "SourceId": "MinimalAPIPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/MinimalAPIPeliculas",
+      "RelativePath": "peliculas/0ead02a9-fe5b-42a0-8080-dbd613810b68#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6ujk9cc73r",
+      "Integrity": "bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\peliculas\\0ead02a9-fe5b-42a0-8080-dbd613810b68.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\46cd9f28-9030-484a-bea8-895b1437fe77.jpg",
+      "SourceId": "MinimalAPIPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/MinimalAPIPeliculas",
+      "RelativePath": "peliculas/46cd9f28-9030-484a-bea8-895b1437fe77#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6ujk9cc73r",
+      "Integrity": "bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\peliculas\\46cd9f28-9030-484a-bea8-895b1437fe77.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\6b848e0d-b62d-427f-bb84-f26a392aaf92.jpg",
+      "SourceId": "MinimalAPIPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/MinimalAPIPeliculas",
+      "RelativePath": "peliculas/6b848e0d-b62d-427f-bb84-f26a392aaf92#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6ujk9cc73r",
+      "Integrity": "bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\peliculas\\6b848e0d-b62d-427f-bb84-f26a392aaf92.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\767eb31d-9bfd-43ac-bb2f-412706cb1ed6.jpg",
+      "SourceId": "MinimalAPIPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/MinimalAPIPeliculas",
+      "RelativePath": "peliculas/767eb31d-9bfd-43ac-bb2f-412706cb1ed6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6ujk9cc73r",
+      "Integrity": "bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\peliculas\\767eb31d-9bfd-43ac-bb2f-412706cb1ed6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\d88d6efd-9afb-4228-abb9-a65b56fb3cc8.jpg",
+      "SourceId": "MinimalAPIPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/MinimalAPIPeliculas",
+      "RelativePath": "peliculas/d88d6efd-9afb-4228-abb9-a65b56fb3cc8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6ujk9cc73r",
+      "Integrity": "bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\peliculas\\d88d6efd-9afb-4228-abb9-a65b56fb3cc8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\da5341a9-b37a-4add-bb3d-5a051111f14d.jpg",
+      "SourceId": "MinimalAPIPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/MinimalAPIPeliculas",
+      "RelativePath": "peliculas/da5341a9-b37a-4add-bb3d-5a051111f14d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6ujk9cc73r",
+      "Integrity": "bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\peliculas\\da5341a9-b37a-4add-bb3d-5a051111f14d.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "peliculas/0ead02a9-fe5b-42a0-8080-dbd613810b68.6ujk9cc73r.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\0ead02a9-fe5b-42a0-8080-dbd613810b68.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6ujk9cc73r"
+        },
+        {
+          "Name": "label",
+          "Value": "peliculas/0ead02a9-fe5b-42a0-8080-dbd613810b68.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/0ead02a9-fe5b-42a0-8080-dbd613810b68.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\0ead02a9-fe5b-42a0-8080-dbd613810b68.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:59:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/46cd9f28-9030-484a-bea8-895b1437fe77.6ujk9cc73r.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\46cd9f28-9030-484a-bea8-895b1437fe77.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:56:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6ujk9cc73r"
+        },
+        {
+          "Name": "label",
+          "Value": "peliculas/46cd9f28-9030-484a-bea8-895b1437fe77.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/46cd9f28-9030-484a-bea8-895b1437fe77.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\46cd9f28-9030-484a-bea8-895b1437fe77.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:56:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/6b848e0d-b62d-427f-bb84-f26a392aaf92.6ujk9cc73r.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\6b848e0d-b62d-427f-bb84-f26a392aaf92.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:34:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6ujk9cc73r"
+        },
+        {
+          "Name": "label",
+          "Value": "peliculas/6b848e0d-b62d-427f-bb84-f26a392aaf92.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/6b848e0d-b62d-427f-bb84-f26a392aaf92.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\6b848e0d-b62d-427f-bb84-f26a392aaf92.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:34:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/767eb31d-9bfd-43ac-bb2f-412706cb1ed6.6ujk9cc73r.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\767eb31d-9bfd-43ac-bb2f-412706cb1ed6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:40:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6ujk9cc73r"
+        },
+        {
+          "Name": "label",
+          "Value": "peliculas/767eb31d-9bfd-43ac-bb2f-412706cb1ed6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/767eb31d-9bfd-43ac-bb2f-412706cb1ed6.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\767eb31d-9bfd-43ac-bb2f-412706cb1ed6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:40:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/d88d6efd-9afb-4228-abb9-a65b56fb3cc8.6ujk9cc73r.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\d88d6efd-9afb-4228-abb9-a65b56fb3cc8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:53:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6ujk9cc73r"
+        },
+        {
+          "Name": "label",
+          "Value": "peliculas/d88d6efd-9afb-4228-abb9-a65b56fb3cc8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/d88d6efd-9afb-4228-abb9-a65b56fb3cc8.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\d88d6efd-9afb-4228-abb9-a65b56fb3cc8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 18:53:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/da5341a9-b37a-4add-bb3d-5a051111f14d.6ujk9cc73r.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\da5341a9-b37a-4add-bb3d-5a051111f14d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 17:38:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6ujk9cc73r"
+        },
+        {
+          "Name": "label",
+          "Value": "peliculas/da5341a9-b37a-4add-bb3d-5a051111f14d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    },
+    {
+      "Route": "peliculas/da5341a9-b37a-4add-bb3d-5a051111f14d.jpg",
+      "AssetFile": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\wwwroot\\peliculas\\da5341a9-b37a-4add-bb3d-5a051111f14d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 17:38:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bnqcTlihxI4A+1StfRVx/IOaXSqu22tthoeCI3vZ0mE="
+        }
+      ]
+    }
+  ]
 }

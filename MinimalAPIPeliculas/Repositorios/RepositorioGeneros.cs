@@ -13,7 +13,7 @@ namespace MinimalAPIPeliculas.Repositorios
         public RepositorioGeneros(IConfiguration configuration)
         {
             connectionString
-                = configuration.GetConnectionString("DefaultConecction");
+                = configuration.GetConnectionString("DefaultConnection");
         }
 
         public async Task<List<Genero>> ObtenerTodos()

@@ -42,7 +42,7 @@ namespace MinimalAPIPeliculas.Repositorios
             using (var conexion = new SqlConnection(connectionString))
             {
                 var id = await conexion.QuerySingleAsync<int>("Comentarios_Crear",
-                    new { comentario.Cuerpo, comentario.PeliculaId },
+                    new { comentario.Cuerpo, comentario.PeliculaId, comentario.UsuarioId },
                     commandType: CommandType.StoredProcedure);
                 comentario.Id = id;
                 return id;

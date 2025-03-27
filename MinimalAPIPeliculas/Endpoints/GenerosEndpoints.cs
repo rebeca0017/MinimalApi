@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.OutputCaching;
-using MinimalAPIPeliculas.Entidades;
-using MinimalAPIPeliculas.DTOs;
-using MinimalAPIPeliculas.Repositorios;
-using AutoMapper;
+﻿using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
+using MinimalAPIPeliculas.DTOs;
+using MinimalAPIPeliculas.Entidades;
 using MinimalAPIPeliculas.Filtros;
+using MinimalAPIPeliculas.Repositorios;
 
 namespace MinimalAPIPeliculas.Endpoints
 {
@@ -13,13 +14,17 @@ namespace MinimalAPIPeliculas.Endpoints
     {
         public static RouteGroupBuilder MapGeneros(this RouteGroupBuilder group)
         {
-
             group.MapGet("/", ObtenerGeneros)
-               .CacheOutput(c => c.Expire(TimeSpan.FromSeconds(60)).Tag("generos-get")).RequireAuthorization();
+                .CacheOutput(c => c.Expire(TimeSpan.FromSeconds(60)).Tag("generos-get"))
+                .RequireAuthorization();
             group.MapGet("/{id:int}", ObtenerGeneroPorId);
-            group.MapPost("/", CrearGenero).AddEndpointFilter<FiltroValidaciones<CrearGeneroDTO>>();
-            group.MapPut("/{id:int}", ActualizarGenero).AddEndpointFilter < FiltroValidaciones<CrearGeneroDTO>>();
-            group.MapDelete("/{id:int}", BorrarGenero);
+            group.MapPost("/", CrearGenero)
+                .RequireAuthorization("esadmin")
+                .AddEndpointFilter<FiltroValidaciones<CrearGeneroDTO>>();
+            group.MapPut("/{id:int}", ActualizarGenero)
+                .RequireAuthorization("esadmin")
+                .AddEndpointFilter<FiltroValidaciones<CrearGeneroDTO>>();
+            group.MapDelete("/{id:int}", BorrarGenero).RequireAuthorization("esadmin");
             return group;
         }
 
@@ -46,11 +51,17 @@ namespace MinimalAPIPeliculas.Endpoints
             return TypedResults.Ok(generoDTO);
         }
 
-        static async Task<Results<Created<GeneroDTO>, ValidationProblem> >
-            CrearGenero(CrearGeneroDTO crearGeneroDTO,
+        static async Task<Results<Created<GeneroDTO>, ValidationProblem>> CrearGenero(CrearGeneroDTO crearGeneroDTO,
             IRepositorioGeneros repositorio, IOutputCacheStore outputCacheStore,
-            IMapper mapper)
+            IMapper mapper, IValidator<CrearGeneroDTO> validador)
         {
+            var resultadoValidacion = await validador.ValidateAsync(crearGeneroDTO);
+
+            if (!resultadoValidacion.IsValid)
+            {
+                return TypedResults.ValidationProblem(resultadoValidacion.ToDictionary());
+            }
+
             var genero = mapper.Map<Genero>(crearGeneroDTO);
             var id = await repositorio.Crear(genero);
             await outputCacheStore.EvictByTagAsync("generos-get", default);
@@ -58,12 +69,18 @@ namespace MinimalAPIPeliculas.Endpoints
             return TypedResults.Created($"/generos/{genero.Id}", generoDTO);
         }
 
-        static async Task<Results<NotFound, NoContent, ValidationProblem>> ActualizarGenero(int id,
+        static async Task<Results<NotFound, NoContent, ValidationProblem>>
+            ActualizarGenero(int id,
             CrearGeneroDTO crearGeneroDTO,
            IRepositorioGeneros repositorio, IOutputCacheStore outputCacheStore,
-           IMapper mapper)
+           IMapper mapper, IValidator<CrearGeneroDTO> validador)
         {
-           
+            var resultadoValidacion = await validador.ValidateAsync(crearGeneroDTO);
+
+            if (!resultadoValidacion.IsValid)
+            {
+                return TypedResults.ValidationProblem(resultadoValidacion.ToDictionary());
+            }
 
 
             var existe = await repositorio.Existe(id);

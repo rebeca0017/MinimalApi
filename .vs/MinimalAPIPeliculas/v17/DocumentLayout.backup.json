@@ -7,31 +7,32 @@
       "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\utilidades\\llaves.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\utilidades\\llaves.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\servicios\\usuariostore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\servicios\\usuariostore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\endpoints\\usuariosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\endpoints\\usuariosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\validaciones\\credencialesusuariodtovalidador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\validaciones\\credencialesusuariodtovalidador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\repositorios\\repositoriousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\repositorios\\repositoriousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\validaciones\\editarclaimdtovalidador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\validaciones\\editarclaimdtovalidador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\endpoints\\peliculasendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\endpoints\\peliculasendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\validaciones\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\validaciones\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\endpoints\\generosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\endpoints\\generosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\AppData\\Roaming\\Microsoft\\UserSecrets\\95a3c487-ec90-4858-be53-eab435c88b6d\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\endpoints\\comentariosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\endpoints\\comentariosendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\endpoints\\actoresendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\endpoints\\actoresendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|c:\\users\\crist\\source\\repos\\minimalapipeliculas\\minimalapipeliculas\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53743677-C41A-4993-98F3-1F4A95B19409}|MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj|solutionrelative:minimalapipeliculas\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,34 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditarClaimDTOValidador.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Validaciones\\EditarClaimDTOValidador.cs",
-              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Validaciones\\EditarClaimDTOValidador.cs",
-              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Validaciones\\EditarClaimDTOValidador.cs",
-              "RelativeToolTip": "MinimalAPIPeliculas\\Validaciones\\EditarClaimDTOValidador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T20:01:21.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CredencialesUsuarioDTOValidador.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Validaciones\\CredencialesUsuarioDTOValidador.cs",
-              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Validaciones\\CredencialesUsuarioDTOValidador.cs",
-              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Validaciones\\CredencialesUsuarioDTOValidador.cs",
-              "RelativeToolTip": "MinimalAPIPeliculas\\Validaciones\\CredencialesUsuarioDTOValidador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T19:58:35.278Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -77,74 +52,100 @@
               "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Program.cs",
               "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Program.cs",
               "RelativeToolTip": "MinimalAPIPeliculas\\Program.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T17:25:12.817Z",
+              "WhenOpened": "2025-03-27T21:05:12.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Llaves.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Utilidades\\Llaves.cs",
-              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Utilidades\\Llaves.cs",
-              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Utilidades\\Llaves.cs",
-              "RelativeToolTip": "MinimalAPIPeliculas\\Utilidades\\Llaves.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwDQAAABeAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GenerosEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\GenerosEndpoints.cs",
+              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Endpoints\\GenerosEndpoints.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\GenerosEndpoints.cs",
+              "RelativeToolTip": "MinimalAPIPeliculas\\Endpoints\\GenerosEndpoints.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwEEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T19:47:57.402Z",
+              "WhenOpened": "2025-03-27T20:13:19.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Utilidades.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Validaciones\\Utilidades.cs",
-              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Validaciones\\Utilidades.cs",
-              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Validaciones\\Utilidades.cs",
-              "RelativeToolTip": "MinimalAPIPeliculas\\Validaciones\\Utilidades.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABfAAAAAAAAAA==",
+              "Title": "ActoresEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\ActoresEndpoints.cs",
+              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Endpoints\\ActoresEndpoints.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\ActoresEndpoints.cs",
+              "RelativeToolTip": "MinimalAPIPeliculas\\Endpoints\\ActoresEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T20:35:40.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuariosEndpoints.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\UsuariosEndpoints.cs",
-              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Endpoints\\UsuariosEndpoints.cs",
-              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\UsuariosEndpoints.cs",
-              "RelativeToolTip": "MinimalAPIPeliculas\\Endpoints\\UsuariosEndpoints.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAYwBEAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T20:49:07.342Z",
+              "WhenOpened": "2025-03-27T20:11:55.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsuarioStore.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Servicios\\UsuarioStore.cs",
-              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Servicios\\UsuarioStore.cs",
-              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Servicios\\UsuarioStore.cs",
-              "RelativeToolTip": "MinimalAPIPeliculas\\Servicios\\UsuarioStore.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAA5wBQAAABUAAAAAAAAAA==",
+              "Title": "RepositorioUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Repositorios\\RepositorioUsuarios.cs",
+              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Repositorios\\RepositorioUsuarios.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Repositorios\\RepositorioUsuarios.cs",
+              "RelativeToolTip": "MinimalAPIPeliculas\\Repositorios\\RepositorioUsuarios.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowDMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T18:14:25.045Z",
+              "WhenOpened": "2025-03-27T20:04:12.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ComentariosEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\ComentariosEndpoints.cs",
+              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Endpoints\\ComentariosEndpoints.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\ComentariosEndpoints.cs",
+              "RelativeToolTip": "MinimalAPIPeliculas\\Endpoints\\ComentariosEndpoints.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAqwI0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T19:58:26.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\UsuariosEndpoints.cs",
+              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Endpoints\\UsuariosEndpoints.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\UsuariosEndpoints.cs",
+              "RelativeToolTip": "MinimalAPIPeliculas\\Endpoints\\UsuariosEndpoints.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T19:44:29.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PeliculasEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\PeliculasEndpoints.cs",
+              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\Endpoints\\PeliculasEndpoints.cs",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\Endpoints\\PeliculasEndpoints.cs",
+              "RelativeToolTip": "MinimalAPIPeliculas\\Endpoints\\PeliculasEndpoints.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAqwKAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T20:13:55.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\crist\\AppData\\Roaming\\Microsoft\\UserSecrets\\95a3c487-ec90-4858-be53-eab435c88b6d\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\95a3c487-ec90-4858-be53-eab435c88b6d\\secrets.json",
-              "ToolTip": "C:\\Users\\crist\\AppData\\Roaming\\Microsoft\\UserSecrets\\95a3c487-ec90-4858-be53-eab435c88b6d\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\95a3c487-ec90-4858-be53-eab435c88b6d\\secrets.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MinimalAPIPeliculas\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\crist\\source\\repos\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\appsettings.Development.json",
+              "RelativeToolTip": "MinimalAPIPeliculas\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-26T17:56:42.998Z",
+              "WhenOpened": "2025-03-27T18:58:17.984Z",
               "EditorCaption": ""
             }
           ]

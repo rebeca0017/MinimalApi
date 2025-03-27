@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using FluentValidation;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OutputCaching;
@@ -8,10 +7,8 @@ using MinimalAPIPeliculas.Entidades;
 using MinimalAPIPeliculas.Filtros;
 using MinimalAPIPeliculas.Repositorios;
 using MinimalAPIPeliculas.Servicios;
-using System.ComponentModel.DataAnnotations;
 
-
-namespace MinimalAPIPeliculas.Endpoint
+namespace MinimalAPIPeliculas.Endpoints
 {
     public static class ActoresEndpoints
     {
@@ -19,12 +16,16 @@ namespace MinimalAPIPeliculas.Endpoint
 
         public static RouteGroupBuilder MapActores(this RouteGroupBuilder group)
         {
-            group.MapPost("/", Crear).DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearActorDTO>>();
+            group.MapPost("/", Crear)
+                .RequireAuthorization("esadmin")
+                .DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearActorDTO>>();
             group.MapGet("/", ObtenerActores).CacheOutput(c => c.Expire(TimeSpan.FromSeconds(60)).Tag("actores-get"));
             group.MapGet("/{id:int}", ObtenerActorPorId);
             group.MapGet("obtenerPorNombre/{nombre}", ObtenerPorNombre);
-            group.MapPut("/{id:int}", Actualizar).DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearActorDTO>>();
-            group.MapDelete("/{id:int}", Borrar);
+            group.MapPut("/{id:int}", Actualizar)
+                .RequireAuthorization("esadmin")
+                .DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearActorDTO>>();
+            group.MapDelete("/{id:int}", Borrar).RequireAuthorization("esadmin");
             return group;
         }
 
@@ -60,13 +61,11 @@ namespace MinimalAPIPeliculas.Endpoint
             return TypedResults.Ok(actoresDTO);
         }
 
-        static async Task<Results<Created<ActorDTO>, ValidationProblem>> 
+        static async Task<Results<Created<ActorDTO>, ValidationProblem>>
             Crear([FromForm] CrearActorDTO crearActorDTO,
-            IRepositorioActores repositorio, IOutputCacheStore outputCacheStore,
-            IMapper mapper, IAlmacenadorArchivos almacenadorArchivos)
+            IRepositorioActores repositorio, IOutputCacheStore outputCacheStore, IMapper mapper,
+            IAlmacenadorArchivos almacenadorArchivos)
         {
-            
-
             var actor = mapper.Map<Actor>(crearActorDTO);
 
             if (crearActorDTO.Foto is not null)
@@ -82,9 +81,9 @@ namespace MinimalAPIPeliculas.Endpoint
         }
 
         static async Task<Results<NoContent, NotFound>> Actualizar(int id,
-            [FromForm] CrearActorDTO crearActorDTO, IRepositorioActores repositorio,
-            IAlmacenadorArchivos almacenadorArchivos, IOutputCacheStore outputCacheStore,
-            IMapper mapper)
+    [FromForm] CrearActorDTO crearActorDTO, IRepositorioActores repositorio,
+    IAlmacenadorArchivos almacenadorArchivos, IOutputCacheStore outputCacheStore,
+    IMapper mapper)
         {
             var actorDB = await repositorio.ObtenerPorId(id);
 
@@ -124,5 +123,7 @@ namespace MinimalAPIPeliculas.Endpoint
             await outputCacheStore.EvictByTagAsync("actores-get", default);
             return TypedResults.NoContent();
         }
+
+
     }
 }

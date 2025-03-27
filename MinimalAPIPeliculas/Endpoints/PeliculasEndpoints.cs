@@ -7,7 +7,6 @@ using MinimalAPIPeliculas.Entidades;
 using MinimalAPIPeliculas.Filtros;
 using MinimalAPIPeliculas.Repositorios;
 using MinimalAPIPeliculas.Servicios;
-using System.Linq;
 
 namespace MinimalAPIPeliculas.Endpoints
 {
@@ -17,17 +16,20 @@ namespace MinimalAPIPeliculas.Endpoints
 
         public static RouteGroupBuilder MapPeliculas(this RouteGroupBuilder group)
         {
-            group.MapPost("/", Crear).DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearPeliculaDTO>>();
+            group.MapPost("/", Crear)
+                .RequireAuthorization("esadmin")
+                .DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearPeliculaDTO>>();
             group.MapGet("/", Obtener).CacheOutput(c => c.Expire(TimeSpan.FromSeconds(60)).Tag("peliculas-get"));
             group.MapGet("/{id:int}", ObtenerPorId);
-            group.MapPut("/{id:int}", Actualizar).DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearPeliculaDTO>>();
-            group.MapDelete("/{id:int}", Borrar);
-            group.MapPost("{id:int}/asignargeneros", AsignarGeneros);
-            group.MapPost("{id:int}/asignaractores", AsignarActores);
+            group.MapPut("/{id:int}", Actualizar)
+                .RequireAuthorization("esadmin")
+                .DisableAntiforgery().AddEndpointFilter<FiltroValidaciones<CrearPeliculaDTO>>();
+            group.MapDelete("/{id:int}", Borrar).RequireAuthorization("esadmin");
+            group.MapPost("{id:int}/asignargeneros", AsignarGeneros).RequireAuthorization("esadmin");
+            group.MapPost("{id:int}/asignaractores", AsignarActores).RequireAuthorization("esadmin");
             return group;
         }
 
-        //obtener todas las peliculas
         static async Task<Ok<List<PeliculaDTO>>> Obtener(IRepositorioPeliculas repositorio,
             IMapper mapper, int pagina = 1, int recordsPorPagina = 10)
         {
@@ -37,7 +39,6 @@ namespace MinimalAPIPeliculas.Endpoints
             return TypedResults.Ok(peliculasDTO);
         }
 
-        //obtener por id la pelicula 
         static async Task<Results<Ok<PeliculaDTO>, NotFound>> ObtenerPorId(int id, IRepositorioPeliculas repositorio, IMapper mapper)
         {
             var pelicula = await repositorio.ObtenerPorId(id);
@@ -52,7 +53,6 @@ namespace MinimalAPIPeliculas.Endpoints
             return TypedResults.Ok(peliculaDTO);
         }
 
-        //crear peliculas 
 
         static async Task<Created<PeliculaDTO>> Crear([FromForm] CrearPeliculaDTO crearPeliculaDTO,
             IRepositorioPeliculas repositorio, IAlmacenadorArchivos almacenadorArchivos,
@@ -71,8 +71,6 @@ namespace MinimalAPIPeliculas.Endpoints
             var peliculaDTO = mapper.Map<PeliculaDTO>(pelicula);
             return TypedResults.Created($"/peliculas/{id}", peliculaDTO);
         }
-
-        //actualizar peliculas 
 
         static async Task<Results<NoContent, NotFound>> Actualizar(int id,
             [FromForm] CrearPeliculaDTO crearPeliculaDTO, IRepositorioPeliculas repositorio,
@@ -102,7 +100,6 @@ namespace MinimalAPIPeliculas.Endpoints
             return TypedResults.NoContent();
         }
 
-        //borrar peliculas
         static async Task<Results<NoContent, NotFound>> Borrar(int id, IRepositorioPeliculas repositorio, IOutputCacheStore outputCacheStore, IAlmacenadorArchivos almacenadorArchivos)
         {
             var peliculaDB = await repositorio.ObtenerPorId(id);
@@ -118,7 +115,6 @@ namespace MinimalAPIPeliculas.Endpoints
             return TypedResults.NoContent();
         }
 
-         //asignar generos 
         static async Task<Results<NoContent, NotFound, BadRequest<string>>>
             AsignarGeneros(int id, List<int> generosIds,
             IRepositorioPeliculas repositorioPeliculas,
